@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
     <EditText android:id="@+id/edit_message"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
         android:hint="@string/edit_message" />
@@ -16,4 +16,18 @@
         android:layout_height="wrap_content"
         android:text="@string/button_send"
         android:onClick="sendMessage" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView android:id="@+id/usermail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
 </LinearLayout>
